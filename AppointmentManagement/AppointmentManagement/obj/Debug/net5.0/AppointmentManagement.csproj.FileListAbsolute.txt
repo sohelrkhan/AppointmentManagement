@@ -433,3 +433,5 @@ E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Appointment\Index.cshtml.g.cs
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Shared\_AddEditAppointment.cshtml.g.cs
