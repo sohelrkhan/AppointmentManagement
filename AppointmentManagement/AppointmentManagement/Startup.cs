@@ -33,9 +33,14 @@ namespace AppointmentManagement
             );
             services.AddControllersWithViews();
 
+            //Application Services
             services.AddTransient<IAppointmentService, AppointmentService>();
 
+            //Identity Service
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //Http Accessor
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

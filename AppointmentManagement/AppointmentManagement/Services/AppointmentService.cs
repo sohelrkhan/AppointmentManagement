@@ -43,5 +43,40 @@ namespace AppointmentManagement.Services
 
             return patients;
         }
+
+        public async Task<int> AddUpdate(AppointmentVM model)
+        {
+            var startDate = DateTime.Parse(model.StartDate);
+            var endDate = DateTime.Parse(model.StartDate).AddMinutes(Convert.ToDouble(model.Duration));
+
+            if (model != null && model.Id > 0)
+            {
+                //Update Logic
+
+                //Return 1 for update
+                return 1;
+            }
+            else
+            {
+                //Create Logic
+                Appointment appointment = new Appointment()
+                {
+                    Tittle = model.Tittle,
+                    Description = model.Description,
+                    StartDate = startDate,
+                    EndDate = endDate,
+                    Duration = model.Duration,
+                    DoctorId = model.DoctorId,
+                    PatientId = model.PatientId,
+                    IsDoctorApproved = false,
+                    AdminId = model.AdminId
+                };
+
+                _db.Appointments.Add(appointment);
+                await _db.SaveChangesAsync();
+                //Return 2 for Create
+                return 2;
+            }
+        }
     }
 }
