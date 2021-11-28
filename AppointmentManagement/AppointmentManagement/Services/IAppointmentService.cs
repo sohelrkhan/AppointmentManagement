@@ -11,5 +11,8 @@ namespace AppointmentManagement.Services
         List<DoctorVM> GetDoctorList();
         List<PatientVM> GetPatientList();
         Task<int> AddUpdate(AppointmentVM model);
+        List<AppointmentVM> DoctorsEventsById(string doctorId);
+        List<AppointmentVM> PatientsEventsById(string patientId);
+        AppointmentVM GetAppointmentById(int id);
     }
 }
