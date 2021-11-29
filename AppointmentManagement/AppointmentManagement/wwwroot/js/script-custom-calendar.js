@@ -9,6 +9,7 @@ $(document).ready(function () {
 	InitializeCalendar();
 });
 
+var calendar;
 function InitializeCalendar() {
 	try {
 		var calendarEl = document.getElementById('calendar');
@@ -53,6 +54,9 @@ function InitializeCalendar() {
 							$.notify("Error", "error");
 						}
 					});
+				},
+				eventClick: function(info) {
+					getEventDetailsByEventId(info.event);
 				}
 			});
 			calendar.render();
@@ -66,10 +70,48 @@ function InitializeCalendar() {
 }
 
 function onShowModal(obj, isEventDetail) {
+	if (isEventDetail != null) {
+		$("#title").val(obj.tittle);
+		$("#description").val(obj.description);
+		$("#appointmentDate").val(obj.startDate);
+		$("#duration").val(obj.duration);
+		$("#doctorId").val(obj.doctorId);
+		$("#patientId").val(obj.patientId);
+		$("#id").val(obj.id);
+
+		$("#lblPatientName").html(obj.patientName);
+		$("#lblDoctorName").html(obj.doctorName);
+		if (obj.isDoctorApproved) {
+			$("#lblStatus").html('Approved');
+			$("#btnConfirm").addClass('d-none');
+			$("#btnSubmit").addClass('d-none');
+
+		} else {
+			$("#lblStatus").html('Pending');
+			$("#btnConfirm").removeClass('d-none');
+			$("#btnSubmit").removeClass('d-none');
+		}
+		$("#btnDelete").removeClass('d-none');
+
+	}
+	else {
+		//For Create an Appointment
+		$("#appointmentDate").val(obj.startStr + " " + new moment().format("hh:mm A"));
+		$("#id").val(0);
+		$("#btnDelete").addClass('d-none');
+		$("#btnSubmit").removeClass('d-none');
+	}
+
 	$("#appointmentInput").modal("show");
 }
 
 function onCloseModal() {
+	$("#appointmentForm")[0].reset();
+	$("id").val(0);
+	$("#title").val('');
+	$("#description").val('');
+	$("#appointmentDate").val('');
+
 	$("#appointmentInput").modal("hide");
 }
 
@@ -92,6 +134,7 @@ function onSubmitForm() {
 			contentType: 'application/json',
 			success: function(response) {
 				if (response.status === 1 || response.status === 2) {
+					calendar.refetchEvents();
 					$.notify(response.message, "success");
 					onCloseModal();
 				} else {
@@ -124,4 +167,67 @@ function checkValidation() {
 	}
 
 	return isValid;
+}
+
+function getEventDetailsByEventId(info) {
+	$.ajax({
+		url: routeURL + '/api/Appointment/GetCalendarDataById/' + info.id,
+		type: 'GET',
+		dataType: 'JSON',
+		success: function (response) {
+			if (response.status === 1 && response.dataenum !== undefined) {
+				onShowModal(response.dataenum, true);
+			}
+			successCallback(events);
+		},
+		error: function (xhr) {
+			$.notify("Error", "error");
+		}
+	});
+}
+
+function onDoctorChange() {
+	calendar.refetchEvents();
+}
+
+function onDeleteAppointment() {
+	var id = parseInt($("#id").val());
+	$.ajax({
+		url: routeURL + '/api/Appointment/DeleteAppointment/' + id,
+		type: 'GET',
+		dataType: 'JSON',
+		success: function (response) {
+			if (response.status === 1) {
+				$.notify(response.message, "success");
+				calendar.refetchEvents();
+				onCloseModal();
+			} else {
+				$.notify(response.message, "error");
+			}
+		},
+		error: function (xhr) {
+			$.notify("Error", "error");
+		}
+	});
+}
+
+function onConfirm() {
+	var id = parseInt($("#id").val());
+	$.ajax({
+		url: routeURL + '/api/Appointment/ConfirmEvent/' + id,
+		type: 'GET',
+		dataType: 'JSON',
+		success: function (response) {
+			if (response.status === 1) {
+				$.notify(response.message, "success");
+				calendar.refetchEvents();
+				onCloseModal();
+			} else {
+				$.notify(response.message, "error");
+			}
+		},
+		error: function (xhr) {
+			$.notify("Error", "error");
+		}
+	});
 }

@@ -23,9 +23,9 @@ namespace AppointmentManagement.Utility
         public static string meetingConfirm = "Meeting confirm successfully.";
         public static string meetingConfirmError = "Error while confirming meeting.";
 
-        public static string appointmentAddError = "Something went wront, Please try again.";
-        public static string appointmentUpdatError = "Something went wront, Please try again.";
-        public static string somethingWentWrong = "Something went wront, Please try again.";
+        public static string appointmentAddError = "Something went wrong, Please try again.";
+        public static string appointmentUpdateError = "Something went wrong, Please try again.";
+        public static string somethingWentWrong = "Something went wrong, Please try again.";
 
         //Status Code
         public static int success_code = 1;

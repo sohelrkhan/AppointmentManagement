@@ -1,0 +1,14 @@
+---Admin---
+Email: admin@gmail.com
+Pass: Aa@123
+
+---Doctor---
+Email: doctor@gmail.com
+Pass: Aa@123
+
+Email: raju@gmail.com
+Pass: Aa@123
+
+---Patient---
+Email: khan@gmail.com
+Pass: Aa@123
