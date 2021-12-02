@@ -5,9 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using AppointmentManagement.Services;
 using AppointmentManagement.Utility;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AppointmentManagement.Controllers
 {
+    [Authorize]
     public class AppointmentController : Controller
     {
         private readonly IAppointmentService _appointmentService;
@@ -16,6 +18,8 @@ namespace AppointmentManagement.Controllers
         {
             _appointmentService = appointmentService;
         }
+
+        //[Authorize(Roles = Helper.Admin)]
         public IActionResult Index()
         {
             ViewBag.Duration = Helper.GetTimeDropDown();

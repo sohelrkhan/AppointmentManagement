@@ -10,7 +10,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using AppointmentManagement.Models;
 using AppointmentManagement.Services;
+using AppointmentManagement.Utility;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -28,6 +31,7 @@ namespace AppointmentManagement
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Db Context
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
@@ -38,6 +42,24 @@ namespace AppointmentManagement
 
             //Identity Service
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //Email Service
+            services.AddScoped<IEmailSender, EmailSender>();
+
+            //Session 
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromDays(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            //Access Denied Path Set
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = new PathString("/Home/AccessDenied");
+            });
 
             //Http Accessor
             services.AddHttpContextAccessor();
@@ -62,7 +84,7 @@ namespace AppointmentManagement
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

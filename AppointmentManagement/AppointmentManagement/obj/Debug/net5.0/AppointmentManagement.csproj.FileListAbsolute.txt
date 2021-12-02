@@ -102,7 +102,6 @@ E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
-E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Physical.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
@@ -435,3 +434,10 @@ E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\AppointmentManagement.pdb
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\AppointmentManagement.genruntimeconfig.cache
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\AppointmentManagement.csproj.AssemblyReference.cache
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\AppointmentManagement.StaticWebAssets.xml
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\Mailjet.Client.dll
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\staticwebassets\AppointmentManagement.StaticWebAssets.xml
+E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Debug\net5.0\Razor\Views\Home\AccessDenied.cshtml.g.cs
