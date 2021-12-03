@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATXikbfdn00u87tKRWFlhRAAAAAACAAAAAAAQZgAAAAEAACAAAACRKkjrXco5H/ixIjdZmJw61TZTtNbn13bDkd0nhCFQqAAAAAAOgAAAAAIAACAAAACTFuDEivPVy8l7cHkj7J6ErFX1VtjFO9ttJJUzjS/2u4AAAABrSTMclfcIK5Zqg/6B/2Tn8LCaMvjwbEDM6rbPn9uth5LDqzdV+rI0vn5/fSguG1Zz3WsUAW7p6HFocfO6eK35p+DgYKKkwIxvTtGWaCFDLPw7h/hJQCwdXFaWWVUVLFOIjEB1HUbR3Cfu6ezIJhsQg9Cw1sIY+7hwVOwp6V667kAAAAAXAWXPlXJe47AFq6IgeZoTeVHLtv3je+RdOBtDxTu3R95XisFJFyl/00HqcGgkC9BkTyOqXMZHe4THI91bVeAA</EncryptedPassword>
+    <History>True|2021-12-03T18:42:06.9796420Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:appointmentmanagementdbserver.database.windows.net,1433%3bInitial Catalog=AppointmentManagement_db%3bUser Id=adminuser%40appointmentmanagementdbserver%3bPassword=Admin123%2a</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

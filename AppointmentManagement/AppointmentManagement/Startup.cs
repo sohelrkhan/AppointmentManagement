@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AppointmentManagement.DbInitializer;
 using AppointmentManagement.Models;
 using AppointmentManagement.Services;
 using AppointmentManagement.Utility;
@@ -46,6 +47,9 @@ namespace AppointmentManagement
             //Email Service
             services.AddScoped<IEmailSender, EmailSender>();
 
+            //Database Seed
+            services.AddScoped<IDbInitializer, DbInitializer.DbInitializer>();
+
             //Session 
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
@@ -66,7 +70,7 @@ namespace AppointmentManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -85,6 +89,7 @@ namespace AppointmentManagement
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
+            dbInitializer.Initialize();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
