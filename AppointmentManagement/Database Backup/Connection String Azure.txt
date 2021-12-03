@@ -1,0 +1,1 @@
+Data Source=tcp:appointmentmanagementdbserver.database.windows.net,1433;Initial Catalog=AppointmentManagement_db;User Id=adminuser@appointmentmanagementdbserver;Password=Admin123*
