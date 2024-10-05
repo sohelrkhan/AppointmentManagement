@@ -6,8 +6,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATXikbfdn00u87tKRWFlhRAAAAAACAAAAAAAQZgAAAAEAACAAAACRKkjrXco5H/ixIjdZmJw61TZTtNbn13bDkd0nhCFQqAAAAAAOgAAAAAIAACAAAACTFuDEivPVy8l7cHkj7J6ErFX1VtjFO9ttJJUzjS/2u4AAAABrSTMclfcIK5Zqg/6B/2Tn8LCaMvjwbEDM6rbPn9uth5LDqzdV+rI0vn5/fSguG1Zz3WsUAW7p6HFocfO6eK35p+DgYKKkwIxvTtGWaCFDLPw7h/hJQCwdXFaWWVUVLFOIjEB1HUbR3Cfu6ezIJhsQg9Cw1sIY+7hwVOwp6V667kAAAAAXAWXPlXJe47AFq6IgeZoTeVHLtv3je+RdOBtDxTu3R95XisFJFyl/00HqcGgkC9BkTyOqXMZHe4THI91bVeAA</EncryptedPassword>
-    <History>True|2021-12-03T18:42:06.9796420Z;</History>
+    <History>False|2024-10-05T16:58:13.1244865Z||;True|2021-12-04T00:42:06.9796420+06:00||;</History>
+    <LastFailureDetails />
+    <EncryptedPassword />
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">

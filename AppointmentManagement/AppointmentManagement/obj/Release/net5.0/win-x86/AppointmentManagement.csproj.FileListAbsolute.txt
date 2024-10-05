@@ -774,3 +774,15 @@ E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\ref\AppointmentManagement.dll
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.pdb
 E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.genruntimeconfig.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.csproj.AssemblyReference.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.AssemblyInfoInputs.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.AssemblyInfo.cs
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.csproj.CoreCompileInputs.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.MvcApplicationPartsAssemblyInfo.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.RazorAssemblyInfo.cache
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.RazorAssemblyInfo.cs
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.sourcelink.json
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.dll
+D:\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\obj\Release\net5.0\win-x86\AppointmentManagement.pdb

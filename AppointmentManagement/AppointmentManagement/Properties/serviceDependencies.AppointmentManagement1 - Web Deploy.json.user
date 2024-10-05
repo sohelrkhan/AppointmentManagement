@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "mssql1": {
-      "restored": true,
-      "restoreTime": "2021-12-03T18:32:24.2814569Z"
+      "restored": false,
+      "restoreTime": "2024-10-05T16:50:55.3412383Z"
     }
   },
   "parameters": {
@@ -11,8 +11,23 @@
       "Type": "subscription",
       "Value": "449749f6-1d0d-4ff5-8ef5-8d4a92231ef8"
     },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "southcentralus"
+    },
     "mssql1.resourceGroupName": {
       "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "DotNet5"
+    },
+    "AppointmentManagement1.subscriptionId": {
+      "Name": "AppointmentManagement1.subscriptionId",
+      "Type": "subscription",
+      "Value": "449749f6-1d0d-4ff5-8ef5-8d4a92231ef8"
+    },
+    "AppointmentManagement1.resourceGroupName": {
+      "Name": "AppointmentManagement1.resourceGroupName",
       "Type": "resourceGroup",
       "Value": "DotNet5"
     }

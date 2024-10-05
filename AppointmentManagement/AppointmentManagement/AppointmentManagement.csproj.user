@@ -14,6 +14,6 @@
     <WebStackScaffolding_IsPartialViewSelected>True</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
-    <NameOfLastUsedPublishProfile>E:\01. Web Development\ASP.NET Core Project\GitHub Project\AppointmentManagement\AppointmentManagement\AppointmentManagement\Properties\PublishProfiles\AppointmentManagement1 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>AppointmentManagement1 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\01. Web Development\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj": {}
+    "D:\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj": {}
   },
   "projects": {
-    "E:\\01. Web Development\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj": {
+    "D:\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\01. Web Development\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj",
+        "projectUniqueName": "D:\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj",
         "projectName": "AppointmentManagement",
-        "projectPath": "E:\\01. Web Development\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj",
+        "projectPath": "D:\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement.csproj",
         "packagesPath": "C:\\Users\\sohel\\.nuget\\packages\\",
-        "outputPath": "E:\\01. Web Development\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\obj\\publish\\win-x86\\",
+        "outputPath": "D:\\ASP.NET Core Project\\GitHub Project\\AppointmentManagement\\AppointmentManagement\\AppointmentManagement\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\sohel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +61,7 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -86,22 +94,23 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.17, 5.0.17]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.17, 5.0.17]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.17, 5.0.17]"
             }
           ],
           "frameworkReferences": {
@@ -112,7 +121,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
